@@ -60,36 +60,44 @@
   </div>
 
   <!-- Experience & Skill -->
-  <div class="mt-10 grid md:grid-cols-2 gap-8">
-    <div>
-      <div class="text-xl font-bold text-yellow-400 mb-2">// EXPERIENCE – SKILL</div>
-      <div class="bg-gray-900 rounded-lg p-4 mb-4">
-        <div class="font-semibold text-white">SKILL <span class="text-sm text-gray-400">(2020–2022)</span></div>
-        <ul class="list-disc ml-5 text-gray-200">
-          <li>Có kỹ năng và sự hiểu biết về âm thanh</li>
-          <li>Biết và thông thạo 1 loại nhạc cụ (Guitar)</li>
-          <li>Thông thạo các phần mềm chỉnh nhạc: VirtualDJ, Serato, Rekordbox</li>
-        </ul>
-        <div class="flex gap-2 mt-2">
-          <!-- Icon app (bạn có thể dùng icon thực tế hoặc emoji) -->
+  <div class="mt-10 grid md:grid-cols-2 gap-8 items-stretch">
+    <!-- Skill block -->
+    <div class="flex flex-col h-full">
+      <div class="text-xl font-bold text-yellow-400 mb-2">// EXPERIENCE </div>
+      <div class="bg-gray-900 rounded-lg p-4 flex flex-col justify-between h-full">
+        <div>
+          <div class="font-semibold text-white">SKILL <span class="text-sm text-gray-400">(2020–2022)</span></div>
+          <ul class="list-disc ml-5 text-gray-200 mt-2">
+            <li>Có kỹ năng và sự hiểu biết về âm thanh</li>
+            <li>Biết và thông thạo 1 loại nhạc cụ (Guitar)</li>
+            <li>Thông thạo các phần mềm chỉnh nhạc: VirtualDJ, Serato, Rekordbox</li>
+          </ul>
+        </div>
+        <div class="flex gap-2 mt-4">
           <span>🎧</span>
           <span>🎹</span>
           <span>🎵</span>
         </div>
       </div>
     </div>
-    <div>
-      <div class="bg-gray-900 rounded-lg p-4 mb-4">
-        <div class="font-semibold text-white">EXPERIENCE <span class="text-sm text-gray-400">(2021–2024)</span></div>
-        <ul class="list-disc ml-5 text-gray-200">
-          <li>Thiết kế và tư vấn nhạc trong chương trình cho khách.</li>
-          <li>Có khả năng biến tấu theo các thể loại chương trình.</li>
-          <li>Nguồn nhạc đa dạng, bắt trending nhanh.</li>
-          <li>Từng làm sự kiện cho chương trình 1000 Pax.</li>
-        </ul>
+  
+    <!-- Experience block -->
+    <div class="flex flex-col h-full">
+      <div class="text-xl font-bold text-yellow-400 mb-2">// SKILL</div>
+      <div class="bg-gray-900 rounded-lg p-4 flex flex-col justify-between h-full">
+        <div>
+          <div class="font-semibold text-white">EXPERIENCE <span class="text-sm text-gray-400">(2021–2024)</span></div>
+          <ul class="list-disc ml-5 text-gray-200 mt-2">
+            <li>Thiết kế và tư vấn nhạc trong chương trình cho khách.</li>
+            <li>Có khả năng biến tấu theo các thể loại chương trình.</li>
+            <li>Nguồn nhạc đa dạng, bắt trending nhanh.</li>
+            <li>Từng làm sự kiện cho chương trình 1000 Pax.</li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
+  
 
   <!-- Education & Type -->
   <div class="mt-10 grid md:grid-cols-2 gap-8">
