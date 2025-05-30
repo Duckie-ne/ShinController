@@ -1,95 +1,209 @@
 <script>
   // Có thể thêm logic JS ở đây nếu cần
+
+  // Thay link ảnh/logo thực tế cho đúng profile của bạn
+  const equipment = [
+    { img: "https://i.imgur.com/your-macbook.jpg", label: "MacBook" },
+    { img: "https://i.imgur.com/your-headphone.jpg", label: "Tai nghe (Nghe trước)" },
+    { img: "https://i.imgur.com/your-soundcard.jpg", label: "Sound Card" }
+  ];
+
+  const brands = [
+    { img: "https://i.imgur.com/lego.png", label: "LEGO" },
+    { img: "https://i.imgur.com/suntory.png", label: "SUNTORY PEPSICO" },
+    { img: "https://i.imgur.com/victoria.png", label: "VICTORIA'S SECRET" },
+    { img: "https://i.imgur.com/vib.png", label: "VIB" },
+    // ... thêm các logo khác
+  ];
+
+  const realPics = [
+    "https://i.imgur.com/pic1.jpg",
+    "https://i.imgur.com/pic2.jpg",
+    "https://i.imgur.com/pic3.jpg",
+    "https://i.imgur.com/pic4.jpg",
+    "https://i.imgur.com/pic5.jpg",
+    "https://i.imgur.com/pic6.jpg",
+    "https://i.imgur.com/pic7.jpg",
+    "https://i.imgur.com/pic8.jpg"
+  ];
+
+  const agencies = [
+    { img: "https://i.imgur.com/imex.png", label: "IMEX" },
+    { img: "https://i.imgur.com/ignition.png", label: "Ignition Group" },
+    // ... thêm các logo khác
+  ];
+
+  const mcs = [
+    { img: "https://i.imgur.com/mc1.jpg", label: "MC SAN HÍ" },
+    { img: "https://i.imgur.com/mc2.jpg", label: "MC TRƯỜNG LƯU" }
+  ];
 </script>
 
-<!-- Header -->
-<header class="bg-white shadow sticky top-0 z-50">
-  <nav class="container mx-auto flex items-center justify-between px-4 py-3">
-    <div class="font-bold text-xl text-blue-700">Nguyễn Minh Trí</div>
-    <ul class="flex space-x-6">
-      <li><a href="#about" class="hover:text-blue-600">Về Mình</a></li>
-      <li><a href="#projects" class="hover:text-blue-600">Dự Án</a></li>
-      <li><a href="#contact" class="hover:text-blue-600">Liên Hệ</a></li>
-    </ul>
-  </nav>
-</header>
-
-<!-- Hero & Giới thiệu -->
-<section class="bg-gradient-to-r from-blue-100 to-purple-100 py-12 text-center">
-  <div class="flex flex-col items-center animate-fade-in-up">
-    <img src="https://ui-avatars.com/api/?name=Nguyen+Minh+Tri&background=3B82F6&color=fff&size=128" alt="Nguyễn Minh Trí" class="w-32 h-32 rounded-full mx-auto mb-4 shadow-lg border-4 border-white animate-bounce">
-    <h1 class="text-3xl font-bold text-blue-700 mb-2 animate-fade-in">Nguyễn Minh Trí</h1>
-    <h2 class="text-xl text-purple-600 mb-4 animate-fade-in delay-200">Backend Developer (Fresher)</h2>
-    <p class="max-w-xl mx-auto text-gray-700 animate-fade-in delay-300">
-      Xin chào! Mình là Trí, một Backend Developer level Fresher, đam mê xây dựng hệ thống web hiệu quả, an toàn và dễ mở rộng. Mình yêu thích học hỏi công nghệ mới và luôn sẵn sàng tham gia các dự án thực tế.
-    </p>
-    <div class="flex justify-center gap-4 mt-6 animate-fade-in delay-500">
-      <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=400&q=80" alt="Coding" class="w-32 h-20 object-cover rounded-lg shadow-md border-2 border-blue-200">
-      <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=400&q=80" alt="Teamwork" class="w-32 h-20 object-cover rounded-lg shadow-md border-2 border-purple-200">
+<div class="min-h-screen bg-black text-white font-sans px-4 py-8">
+  <!-- Header -->
+  <div class="flex flex-col md:flex-row items-center md:items-start gap-8">
+    <!-- Avatar -->
+    <div class="flex-shrink-0 w-40 h-40 rounded-full border-4 border-yellow-400 overflow-hidden shadow-lg bg-black">
+      <img src="/ShinController/images/IMG_2991.JPG" alt="KuShyn" class="w-full h-full object-cover" />
     </div>
-  </div>
-</section>
-
-<!-- Thông tin cá nhân -->
-<section id="about" class="py-10 bg-white">
-  <div class="container mx-auto grid md:grid-cols-3 gap-8 text-center">
+    <!-- Name & Title -->
     <div>
-      <h3 class="font-semibold text-blue-600 mb-2">Kỹ năng</h3>
-      <ul class="text-gray-700 list-disc list-inside text-left inline-block">
-        <li>Node.js / Express</li>
-        <li>RESTful API</li>
-        <li>MySQL, MongoDB</li>
-        <li>Git, CI/CD cơ bản</li>
-        <li>Docker (cơ bản)</li>
-      </ul>
-    </div>
-    <div>
-      <h3 class="font-semibold text-blue-600 mb-2">Học vấn</h3>
-      <p class="text-gray-700">Cử nhân Công nghệ thông tin, Đại học ABC</p>
-    </div>
-    <div>
-      <h3 class="font-semibold text-blue-600 mb-2">Mục tiêu</h3>
-      <ul class="text-gray-700 list-disc list-inside text-left inline-block">
-        <li>Trở thành Backend Developer chuyên nghiệp</li>
-        <li>Tham gia các dự án thực tế</li>
-        <li>Không ngừng học hỏi công nghệ mới</li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-<!-- Dự án -->
-<section id="projects" class="py-10 bg-blue-50">
-  <div class="container mx-auto">
-    <h3 class="text-2xl font-bold text-blue-700 mb-6 text-center">Dự Án Đã Làm</h3>
-    <div class="grid md:grid-cols-2 gap-6">
-      <div class="bg-white p-6 rounded-lg shadow hover:shadow-xl transition-shadow duration-500">
-        <h4 class="font-semibold text-blue-700 mb-2">Quản lý sinh viên</h4>
-        <p class="text-gray-700 text-sm mb-2">Xây dựng RESTful API quản lý sinh viên, phân quyền, xác thực JWT, CRUD dữ liệu.</p>
-        <a href="#" class="text-blue-600 hover:underline" target="_blank">Xem trên GitHub</a>
+      <div class="text-5xl font-extrabold tracking-widest">
+        <span class="text-white">KU</span>
+        <span class="text-yellow-400">SHYN</span>
       </div>
-      <div class="bg-white p-6 rounded-lg shadow hover:shadow-xl transition-shadow duration-500">
-        <h4 class="font-semibold text-blue-700 mb-2">Blog API</h4>
-        <p class="text-gray-700 text-sm mb-2">API cho ứng dụng blog, hỗ trợ đăng nhập, đăng ký, tạo bài viết, bình luận.</p>
-        <a href="#" class="text-blue-600 hover:underline" target="_blank">Xem trên GitHub</a>
+      <div class="mt-2 text-lg font-semibold tracking-widest text-yellow-400">MUSIC CONTROLLER</div>
+      <div class="mt-4 max-w-xl text-gray-200">
+        Người sẽ chỉnh nhạc theo yêu cầu của chương trình từ phía các Agency hoặc có thể linh hoạt tuỳ tình hình thực tế, song song đó phối hợp với các đơn vị để giúp cho chương trình mạch lạc và có nhiều cung bậc cảm xúc nhất có thể. Công việc này khác hoàn với người chịu trách nhiệm MỞ hoặc TẮT NHẠC. Có thể ví von như một MasterChef nêm "GIA VỊ" cho các món ăn để buổi tiệc thêm phần đậm đà.
       </div>
-      <!-- Thêm các dự án khác tại đây -->
     </div>
   </div>
-</section>
 
-<!-- Liên hệ -->
-<section id="contact" class="py-10 bg-white">
-  <div class="container mx-auto max-w-md">
-    <h3 class="text-2xl font-bold text-blue-700 mb-4 text-center">Liên Hệ</h3>
-    <form class="space-y-4">
-      <input type="text" placeholder="Họ tên" class="w-full p-2 rounded border border-gray-300 focus:border-blue-500" />
-      <input type="email" placeholder="Email" class="w-full p-2 rounded border border-gray-300 focus:border-blue-500" />
-      <textarea placeholder="Nội dung" class="w-full p-2 rounded border border-gray-300 focus:border-blue-500"></textarea>
-      <button type="submit" class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 transition">Gửi</button>
-    </form>
+  <!-- Experience & Skill -->
+  <div class="mt-10 grid md:grid-cols-2 gap-8">
+    <div>
+      <div class="text-xl font-bold text-yellow-400 mb-2">// EXPERIENCE – SKILL</div>
+      <div class="bg-gray-900 rounded-lg p-4 mb-4">
+        <div class="font-semibold text-white">SKILL <span class="text-sm text-gray-400">(2020–2022)</span></div>
+        <ul class="list-disc ml-5 text-gray-200">
+          <li>Có kỹ năng và sự hiểu biết về âm thanh</li>
+          <li>Biết và thông thạo 1 loại nhạc cụ (Guitar)</li>
+          <li>Thông thạo các phần mềm chỉnh nhạc: VirtualDJ, Serato, Rekordbox</li>
+        </ul>
+        <div class="flex gap-2 mt-2">
+          <!-- Icon app (bạn có thể dùng icon thực tế hoặc emoji) -->
+          <span>🎧</span>
+          <span>🎹</span>
+          <span>🎵</span>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="bg-gray-900 rounded-lg p-4 mb-4">
+        <div class="font-semibold text-white">EXPERIENCE <span class="text-sm text-gray-400">(2021–2024)</span></div>
+        <ul class="list-disc ml-5 text-gray-200">
+          <li>Thiết kế và tư vấn nhạc trong chương trình cho khách.</li>
+          <li>Có khả năng biến tấu theo các thể loại chương trình.</li>
+          <li>Nguồn nhạc đa dạng, bắt trending nhanh.</li>
+          <li>Từng làm sự kiện cho chương trình 1000 Pax.</li>
+        </ul>
+      </div>
+    </div>
   </div>
-</section>
+
+  <!-- Education & Type -->
+  <div class="mt-10 grid md:grid-cols-2 gap-8">
+    <div>
+      <div class="text-xl font-bold text-yellow-400 mb-2">// EDUCATION</div>
+      <div class="bg-gray-900 rounded-lg p-4">
+        <div class="font-semibold">Cao Đẳng FPT Polytechnic (2019–2021)</div>
+        <div class="text-gray-200">Khóa chính ngành Sự kiện Billy (MCT) (2022–2023)</div>
+      </div>
+    </div>
+    <div>
+      <div class="text-xl font-bold text-yellow-400 mb-2">// TYPE</div>
+      <div class="bg-gray-900 rounded-lg p-4 flex flex-wrap gap-4">
+        <div class="flex flex-col items-center">
+          <span>🎤</span>
+          <span class="text-sm mt-1">Gala</span>
+        </div>
+        <div class="flex flex-col items-center">
+          <span>🎭</span>
+          <span class="text-sm mt-1">Drama stage</span>
+        </div>
+        <div class="flex flex-col items-center">
+          <span>📚</span>
+          <span class="text-sm mt-1">Training</span>
+        </div>
+        <div class="flex flex-col items-center">
+          <span>💍</span>
+          <span class="text-sm mt-1">Wedding</span>
+        </div>
+        <div class="flex flex-col items-center">
+          <span>🤝</span>
+          <span class="text-sm mt-1">Teambuilding</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- EQUIPMENT USED -->
+  <div class="mt-12">
+    <div class="text-xl font-bold text-yellow-400 mb-4">// EQUIPMENT USED</div>
+    <div class="flex flex-wrap gap-8 justify-center">
+      {#each equipment as eq}
+        <div class="flex flex-col items-center">
+          <img src={eq.img} alt={eq.label} class="w-32 h-32 object-cover rounded-full border-4 border-gray-700 shadow-lg" />
+          <span class="mt-2 text-sm">{eq.label}</span>
+        </div>
+      {/each}
+    </div>
+  </div>
+
+  <!-- BRANDS I HAVE WORKED WITH -->
+  <div class="mt-12">
+    <div class="text-xl font-bold text-yellow-400 mb-4">// BRANDS I HAVE WORKED WITH</div>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6 justify-items-center">
+      {#each brands as brand}
+        <div class="flex flex-col items-center">
+          <div class="rounded-full border-4 border-yellow-400 p-2 bg-black shadow-lg">
+            <img src={brand.img} alt={brand.label} class="w-16 h-16 object-contain" />
+          </div>
+          <span class="mt-2 text-xs text-center">{brand.label}</span>
+        </div>
+      {/each}
+    </div>
+  </div>
+
+  <!-- SOME REAL PICTURES -->
+  <div class="mt-12">
+    <div class="text-xl font-bold text-yellow-400 mb-4">// SOME REAL PICTURES</div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      {#each realPics as pic}
+        <img src={pic} alt="Real event" class="rounded-lg shadow-lg object-cover w-full h-56" />
+      {/each}
+    </div>
+  </div>
+
+  <!-- AGENCY CONNECT -->
+  <div class="mt-12">
+    <div class="text-xl font-bold text-yellow-400 mb-4">// AGENCY CONNECT</div>
+    <div class="flex flex-wrap gap-8 justify-center">
+      {#each agencies as ag}
+        <div class="flex flex-col items-center">
+          <div class="rounded-full border-4 border-yellow-400 p-2 bg-black shadow-lg">
+            <img src={ag.img} alt={ag.label} class="w-16 h-16 object-contain" />
+          </div>
+          <span class="mt-2 text-xs text-center">{ag.label}</span>
+        </div>
+      {/each}
+    </div>
+  </div>
+
+  <!-- BEST WORK WITH MC -->
+  <div class="mt-12">
+    <div class="text-xl font-bold text-yellow-400 mb-4">// BEST WORK WITH MC</div>
+    <div class="flex flex-wrap gap-8 justify-center">
+      {#each mcs as mc}
+        <div class="flex flex-col items-center">
+          <img src={mc.img} alt={mc.label} class="w-32 h-32 object-cover rounded-lg border-4 border-gray-700 shadow-lg" />
+          <span class="mt-2 text-sm">{mc.label}</span>
+        </div>
+      {/each}
+    </div>
+  </div>
+
+  <!-- THANK YOU -->
+  <div class="mt-12 flex flex-col items-center">
+    <div class="text-5xl font-extrabold text-yellow-400 drop-shadow-lg mb-4">Thank You</div>
+    <div class="flex gap-4">
+      <img src="https://i.imgur.com/dj1.png" alt="DJ" class="w-20 h-20 object-contain" />
+      <img src="https://i.imgur.com/dj2.png" alt="MC" class="w-20 h-20 object-contain" />
+      <!-- ... thêm các ảnh sticker khác nếu muốn ... -->
+    </div>
+    <div class="mt-2 text-yellow-400 italic">MusicController! [Cụm từ]: Người "chơi" nhạc!</div>
+  </div>
+</div>
 
 <!-- Footer -->
 <footer class="bg-gray-800 text-white py-6 text-center">
