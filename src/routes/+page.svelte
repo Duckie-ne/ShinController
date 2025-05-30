@@ -17,14 +17,13 @@
   ];
 
   const realPics = [
-    "https://i.imgur.com/pic1.jpg",
-    "https://i.imgur.com/pic2.jpg",
-    "https://i.imgur.com/pic3.jpg",
-    "https://i.imgur.com/pic4.jpg",
-    "https://i.imgur.com/pic5.jpg",
-    "https://i.imgur.com/pic6.jpg",
-    "https://i.imgur.com/pic7.jpg",
-    "https://i.imgur.com/pic8.jpg"
+    "/ShinController/images/z6655734472026_c8376725b396347605c410d8303ccbde.jpg",
+    "/ShinController/images/z6655734530074_d15789295c64e6ea116951e27dbc446d.jpg",
+    "/ShinController/images/z6655734589853_0f30abb6abfdf9eb39423f2e5b5cf7d1.jpg",
+    "/ShinController/images/z6655734646384_de0785fd89837a9140a0d46f4528a319.jpg",
+    "/ShinController/images/z6655734704394_159b5358716ad9682d041ad915ab3899.jpg",
+    "/ShinController/images/z6655734936654_59a8fcb83e2e4ae3d905841539f0e129.jpg",
+
   ];
 
   const agencies = [
@@ -43,17 +42,17 @@
   <!-- Header -->
   <div class="flex flex-col md:flex-row items-center md:items-start gap-8">
     <!-- Avatar -->
-    <div class="flex-shrink-0 w-40 h-40 rounded-xl border-2 border-yellow-400 overflow-hidden shadow-lg bg-black">
+    <div class="flex-shrink-0 w-[30rem] h-[30rem] rounded-xl border-4 border-yellow-400 overflow-hidden shadow-lg bg-black">
       <img src="/ShinController/images/IMG_2991.JPG" alt="KuShyn" class="w-full h-full object-cover" />
     </div>
     <!-- Name & Title -->
     <div>
-      <div class="text-5xl font-extrabold tracking-widest">
+      <div class="text-8xl font-extrabold tracking-widest">
         <span class="text-white">KU</span>
         <span class="text-yellow-400">SHYN</span>
       </div>
-      <div class="mt-2 text-lg font-semibold tracking-widest text-yellow-400">MUSIC CONTROLLER</div>
-      <div class="mt-4 max-w-xl text-gray-200">
+      <div class="mt-4 text-3xl font-semibold tracking-widest text-yellow-400">MUSIC CONTROLLER</div>
+      <div class="mt-8 text-xl text-gray-200">
         Người sẽ chỉnh nhạc theo yêu cầu của chương trình từ phía các Agency hoặc có thể linh hoạt tuỳ tình hình thực tế, song song đó phối hợp với các đơn vị để giúp cho chương trình mạch lạc và có nhiều cung bậc cảm xúc nhất có thể. Công việc này khác hoàn với người chịu trách nhiệm MỞ hoặc TẮT NHẠC. Có thể ví von như một MasterChef nêm "GIA VỊ" cho các món ăn để buổi tiệc thêm phần đậm đà.
       </div>
     </div>
