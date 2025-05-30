@@ -43,7 +43,7 @@
   <!-- Header -->
   <div class="flex flex-col md:flex-row items-center md:items-start gap-8">
     <!-- Avatar -->
-    <div class="flex-shrink-0 w-40 h-40 rounded-full border-4 border-yellow-400 overflow-hidden shadow-lg bg-black">
+    <div class="flex-shrink-0 w-40 h-40 rounded-xl border-2 border-yellow-400 overflow-hidden shadow-lg bg-black">
       <img src="/ShinController/images/IMG_2991.JPG" alt="KuShyn" class="w-full h-full object-cover" />
     </div>
     <!-- Name & Title -->
